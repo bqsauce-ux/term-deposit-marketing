@@ -51,7 +51,7 @@ First, I standadized the numeric columns, such as age, balance, duration, and ca
 | RidgeClassifier | 0.868625 | 0.131375 | 0.131375 | 0.362457 | -0.956824 | 0.464049 | 0.909740 |
 | RidgeClassifierCV | 0.868625 | 0.131375 | 0.131375 | 0.362457 | -0.956824 | 0.464049 | 0.909740 |
 
-
+According to the confusion matrix, XGBClassifier appears to have the highest ROC AUC score, so I used this to plot the feature importance.
 
 I used KMeans for the elbow plot and determined the optimal number of clusters to be 3. I then plotted the histograms for the columns for each cluster.
 
