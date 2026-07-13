@@ -51,7 +51,7 @@ First, I standadized the numeric columns, such as age, balance, duration, and ca
 | RidgeClassifier | 0.868625 | 0.131375 | 0.131375 | 0.362457 | -0.956824 | 0.464049 | 0.909740 |
 | RidgeClassifierCV | 0.868625 | 0.131375 | 0.131375 | 0.362457 | -0.956824 | 0.464049 | 0.909740 |
 
-According to the confusion matrix, XGBClassifier appears to have the highest ROC AUC score, so I used this to plot the feature importance.
+According to the metrics, XGBClassifier appears to have the highest ROC AUC score, so I used this to plot the feature importance. Even though GradientBoosting has a higher accuracy, the confusion matrix shows a high percentage for miss-classification. Therefore, XGBClassifer, with the accuracy level of 0.865375, is the most optimal machine learnign algorithm for predicting term subscription.
 
 I used KMeans for the elbow plot and determined the optimal number of clusters to be 3. I then plotted the histograms for the columns for each cluster.
 
