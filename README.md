@@ -35,6 +35,7 @@ y - has the client subscribed to a term deposit? (binary)
 
 First, I standadized the numeric columns, such as age, balance, duration, and campaign. I then encoded the categorical columns using get_dummpies. Next, I used different machine learning algorithms and the results are displayed below:
 
+I used KMeans for the elbow plot and determined the optimal number of clusters to be 3. I then plotted the histograms for the columns for each cluster.
 
 # Cluster 0
 Age: Distribution is centered below 0, with most values between approximately -1.2 and -0.2. Customers in Cluster 0 tend to be younger than the overall average. There are relatively few older customers.
