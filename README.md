@@ -4,11 +4,11 @@ In this project, we are leveraging information from a call center to develop a m
 
 Inputs:
 Age: Age of customer (numeric)
----
+--
 Job: Type of job (categorical)
----
+--
 Marital: Marital Status (categorical)
----
+--
 Education: categorical
 ---
 Default: Has credit in default? (binary)
