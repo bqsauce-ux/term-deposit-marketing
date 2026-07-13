@@ -36,51 +36,21 @@ y - has the client subscribed to a term deposit? (binary)
 First, I standadized the numeric columns, such as age, balance, duration, and campaign. I then encoded the categorical columns using get_dummpies. Next, I used different machine learning algorithms and the results are displayed below:
 
 | Model | Accuracy | MAE | MSE | RMSE | R² | F1 Score | ROC AUC |
-
 |---------|---------:|---------:|---------:|---------:|---------:|---------:|---------:|
-
 | LogisticRegression | 0.855625 | 0.144375 | 0.144375 | 0.379967 | -1.150458 | 0.452347 | 0.918624 |
-
 | RandomForestClassifier | 0.857375 | 0.142625 | 0.142625 | 0.377657 | -1.124392 | 0.469055 | 0.922644 |
-
 | GradientBoosting | 0.933750 | 0.066250 | 0.066250 | 0.257391 | 0.013210 | 0.411111 | 0.942164 |
-
 | XGBClassifier | 0.865375 | 0.134625 | 0.134625 | 0.366913 | -1.005232 | 0.490780 | 0.942316 |
-
 | LGBMClassifier | 0.694250 | 0.305750 | 0.305750 | 0.552947 | -3.554130 | 0.319421 | 0.940729 |
-
 | SGDClassifier | 0.842875 | 0.157125 | 0.157125 | 0.396390 | -1.340369 | 0.438589 | 0.918363 |
-
 | BernoulliNB | 0.917875 | 0.082125 | 0.082125 | 0.286575 | -0.223248 | 0.173585 | 0.834185 |
-
 | GaussianNB | 0.881375 | 0.118625 | 0.118625 | 0.344420 | -0.766913 | 0.362660 | 0.817221 |
-
 | NearestCentroid | 0.887875 | 0.112125 | 0.112125 | 0.334851 | -0.670096 | 0.467023 | 0.907934 |
-
 | Perceptron | 0.767625 | 0.232375 | 0.232375 | 0.482050 | -2.461213 | 0.346113 | 0.889849 |
-
 | LinearDiscriminantAnalysis | 0.930000 | 0.070000 | 0.070000 | 0.264575 | -0.042646 | 0.459459 | 0.911588 |
-
 | RidgeClassifier | 0.868625 | 0.131375 | 0.131375 | 0.362457 | -0.956824 | 0.464049 | 0.909740 |
-
 | RidgeClassifierCV | 0.868625 | 0.131375 | 0.131375 | 0.362457 | -0.956824 | 0.464049 | 0.909740 |
 
-
-| Classifier | Accuracy | MAE | MSE | RMSE | R² | F1 Score | ROC AUC |
-|------------|----------|----------|----------|----------|----------|----------|
-| Logistic Regression | 0.855625 | 0.3462 | 0.5883 | -0.3929 | 0.7273 | 0.7708 |
-| Random Forest | 0.7692 | 0.2308 | 0.4804 | 0.0714 | 0.8125 | 0.7589 |
-| Gradient Boosting | 0.7692 | 0.2308 | 0.4804 | 0.0714 | 0.8125 | 0.7500 |
-| XGBoost | 0.8077 | 0.1923 | 0.4385 | 0.2262 | 0.8276 | 0.8363 |
-| LightGBM | 0.7692 | 0.2308 | 0.4804 | 0.0714 | 0.7857 | 0.8363 |
-| SGD Classifier | 0.5769 | 0.4231 | 0.6504 | -0.7024 | 0.6667 | 0.4911 |
-| Bernoulli NB | 0.6923 | 0.3077 | 0.5547 | -0.2381 | 0.7333 | 0.7407 |
-| Gaussian NB | 0.6538 | 0.3462 | 0.5883 | -0.3929 | 0.7097 | 0.8006 |
-| Nearest Centroid | 0.6538 | 0.3462 | 0.5883 | -0.3929 | 0.6897 | 0.7887 |
-| Perceptron | 0.7308 | 0.2692 | 0.5189 | -0.0833 | 0.7879 | 0.8125 |
-| Linear Discriminant Analysis | 0.6538 | 0.3462 | 0.5883 | -0.3929 | 0.7273 | 0.7708 |
-| Ridge Classifier | 0.6538 | 0.3462 | 0.5883 | -0.3929 | 0.7273 | 0.7708 |
-| Ridge Classifier CV | 0.6538 | 0.3462 | 0.5883 | -0.3929 | 0.7273 | 0.7708 |
 
 
 I used KMeans for the elbow plot and determined the optimal number of clusters to be 3. I then plotted the histograms for the columns for each cluster.
