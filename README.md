@@ -71,9 +71,9 @@ Personal Loan: Most do not have personal loans.
 Day: Contacts spread across the month, slightly higher toward the end.
 
 ## Cluster 1
-Age: Older than average.
-Balance: Mostly average balances with a few high-balance outliers.
-Duration: Around average to slightly shorter call durations.
+- Age: Older than average.
+- Balance: Mostly average balances with a few high-balance outliers.
+- Duration: Around average to slightly shorter call durations.
 Campaign: Generally few campaign contacts.
 Job: Predominantly retired, with many management and technician workers.
 Marital: Mostly married customers.
