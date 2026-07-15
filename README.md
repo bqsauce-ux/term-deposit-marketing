@@ -55,49 +55,50 @@ According to the metrics, XGBClassifier appears to have the highest ROC AUC scor
 
 I used KMeans for the elbow plot and determined the optimal number of clusters to be 3. I then plotted the histograms for the columns for each cluster.
 
-# Cluster 0
-Age: Distribution is centered below 0, with most values between approximately -1.2 and -0.2. Customers in Cluster 0 tend to be younger than the overall average. There are relatively few older customers.
-Balance: Strong right-skewed distribution. Most observations are clustered near or below the mean, with a few very large positive values.	Most customers have below-average or average account balances, while a small number of customers have very high balances (outliers).
-Duration: Distribution peaks slightly below 0, although it spans both negative and positive values.	Call durations are generally slightly shorter than the dataset average, with some longer calls present.
-Campaign: Most observations are at 0 or very low values with a long right tail.	Below-average campaign contacts are typical for this cluster. Very high campaign counts are uncommon.
-Job	Management, technician, admin, and blue-collar are the largest groups. These occupations are more common in Cluster 0, while retired, student, housemaid, and unemployed are less common.
-Marital	Single and married dominate; divorced is relatively rare. The cluster is primarily composed of single and married customers.
-Education	Secondary education is the largest category, followed by tertiary. Secondary education is above average within this cluster, while primary and unknown education occur less frequently.
-Housing Loan: Both yes and no are represented, with "Yes" appearing slightly more frequent.	Housing loans are fairly common in this cluster.
-Contact:Cellular contact overwhelmingly dominates. Customers are primarily contacted by cellular phone; telephone and unknown contacts are much less common.
-Month: Q2 has the highest frequency, followed by Q1.Most contacts occurred during Q2, while Q3 and Q4 are less represented. Default	Almost every customer has No default, with very few Yes. Cluster 0 has a very low credit default rate, indicating generally good credit history.
-Personal Loan	The majority of customers have No personal loan. Most customers do not have personal loans.
-Day (Week)	Contacts are distributed across all four weeks, with a slight increase during the third and fourth weeks. There is no strong weekly contact pattern, although contacts appear somewhat more frequent toward the end of the month.
+## Cluster 0
+Age: Younger than average.
+Balance: Mostly average to below-average balances, with a few very high outliers.
+Duration: Slightly shorter-than-average call durations.
+Campaign: Generally few campaign contacts.
+Job: Mainly management, technician, admin, and blue-collar workers.
+Marital: Mostly single and married customers.
+Education: Predominantly secondary education, followed by tertiary.
+Housing Loan: Slightly more customers have housing loans.
+Contact: Primarily contacted via cellular.
+Month: Most contacts occurred in Q2.
+Default: Very low credit default rate.
+Personal Loan: Most do not have personal loans.
+Day: Contacts spread across the month, slightly higher toward the end.
 
 ## Cluster 1
-Age	Distribution is centered above 0, with most values between about 0.5 and 1.5.	Customers are older than the overall average.
-Balance	Strongly right-skewed. Most customers have balances near the mean with a few very large outliers.	Most customers have average to slightly below-average balances, while a few have exceptionally high balances.
-Duration	Distribution is centered slightly below 0 with a long right tail.	Call durations are around average to slightly below average, although some customers had much longer calls.
-Campaign	Most values are close to 0 with a long right tail.	Customers were contacted relatively few times, with only a few receiving many campaign contacts.
-Job	Retired is the largest category, followed by management and technician.	This cluster contains a high proportion of retired customers, with management and technician also well represented.
-Marital	Married customers dominate; divorced and single are much less common.	The cluster is composed primarily of married customers.
-Education	Secondary education is the largest group, followed by tertiary.	Secondary education predominates, while primary and unknown education are less frequent.
-Housing Loan	"No" is much more common than "Yes".	Most customers do not have a housing loan.
-Contact	Cellular is overwhelmingly the primary contact method.	Customers are primarily contacted via cellular phone.
-Month	Q2 has the highest frequency.	Most marketing contacts occurred during Q2.
-Default	Almost all customers have No default.	Very few customers have a history of credit default.
-Loan	Most customers have No personal loan.	Personal loans are uncommon in this cluster.
-Day	Contacts are spread fairly evenly across the month, with a slight concentration in the middle.	There is no strong day-of-month pattern for contacts.
+Age: Older than average.
+Balance: Mostly average balances with a few high-balance outliers.
+Duration: Around average to slightly shorter call durations.
+Campaign: Generally few campaign contacts.
+Job: Predominantly retired, with many management and technician workers.
+Marital: Mostly married customers.
+Education: Mainly secondary education, followed by tertiary.
+Housing Loan: Most do not have housing loans.
+Contact: Primarily contacted via cellular.
+Month: Most contacts occurred in Q2.
+Default: Very low credit default rate.
+Personal Loan: Personal loans are uncommon.
+Day: Contacts evenly distributed throughout the month.
 
 ## Cluster 2
-Age	Distribution is centered around 0 with values spread on both sides.	Customers are close to the overall average age, with a wider age range than the other clusters.
-Balance	Strongly right-skewed with most balances near the mean and a few large outliers.	Most customers have average balances, while a small number have very high account balances.
-Duration	Distribution is concentrated around the center with fewer long calls.	Call durations are around the dataset average, with relatively few extremely long calls.
-Campaign	Most customers were contacted only a few times; distribution has a long right tail.	Customers generally received few campaign contacts, with only a small number contacted many times.
-Job	Technician is the largest occupation, followed by blue-collar and management.	The cluster is dominated by technicians, with substantial representation from blue-collar and management occupations.
-Marital	Married customers are the largest group, followed by single customers; divorced is least common.	The cluster consists primarily of married customers.
-Education	Secondary education is the largest category, followed by tertiary.	Most customers have secondary education, while tertiary education is also common.
-Housing Loan	"Yes" appears slightly more common than "No".	A relatively large proportion of customers have housing loans.
-Contact	Cellular is overwhelmingly the dominant contact method.	Customers are contacted primarily via cellular phone.
-Month	Most contacts occurred during Q2, with fewer in Q3 and Q4.	Marketing activity is concentrated in Q2.
-Default	Almost all customers have No default.	The cluster has a very low credit default rate.
-Loan	Customers without personal loans are more common than those with loans.	Most customers do not have personal loans.
-Day	Contacts are spread across the month with a slight concentration in the middle.
+Age: Around the average age with the widest age range.
+Balance: Mostly average balances with a few very high outliers.
+Duration: Around-average call durations with few long calls.
+Campaign: Generally few campaign contacts.
+Job: Mainly technicians, followed by blue-collar and management workers.
+Marital: Mostly married customers.
+Education: Predominantly secondary education, followed by tertiary.
+Housing Loan: Slightly more customers have housing loans.
+Contact: Primarily contacted via cellular.
+Month: Most contacts occurred in Q2.
+Default: Very low credit default rate.
+Personal Loan: Most do not have personal loans.
+Day: Contacts spread fairly evenly across the month, with a slight mid-month concentration.
 
 
 
