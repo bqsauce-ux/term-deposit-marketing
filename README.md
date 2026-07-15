@@ -56,49 +56,49 @@ According to the metrics, XGBClassifier appears to have the highest ROC AUC scor
 I used KMeans for the elbow plot and determined the optimal number of clusters to be 3. I then plotted the histograms for the columns for each cluster.
 
 ## Cluster 0
-Age: Younger than average.
-Balance: Mostly average to below-average balances, with a few very high outliers.
-Duration: Slightly shorter-than-average call durations.
-Campaign: Generally few campaign contacts.
-Job: Mainly management, technician, admin, and blue-collar workers.
-Marital: Mostly single and married customers.
-Education: Predominantly secondary education, followed by tertiary.
-Housing Loan: Slightly more customers have housing loans.
-Contact: Primarily contacted via cellular.
-Month: Most contacts occurred in Q2.
-Default: Very low credit default rate.
-Personal Loan: Most do not have personal loans.
-Day: Contacts spread across the month, slightly higher toward the end.
+- Age: Younger than average.
+- Balance: Mostly average to below-average balances, with a few very high outliers.
+- Duration: Slightly shorter-than-average call durations.
+- Campaign: Generally few campaign contacts.
+- Job: Mainly management, technician, admin, and blue-collar workers.
+- Marital: Mostly single and married customers.
+- Education: Predominantly secondary education, followed by tertiary.
+- Housing Loan: Slightly more customers have housing loans.
+- Contact: Primarily contacted via cellular.
+- Month: Most contacts occurred in Q2.
+- Default: Very low credit default rate.
+- Personal Loan: Most do not have personal loans.
+- Day: Contacts spread across the month, slightly higher toward the end.
 
 ## Cluster 1
 - Age: Older than average.
 - Balance: Mostly average balances with a few high-balance outliers.
 - Duration: Around average to slightly shorter call durations.
-Campaign: Generally few campaign contacts.
-Job: Predominantly retired, with many management and technician workers.
-Marital: Mostly married customers.
-Education: Mainly secondary education, followed by tertiary.
-Housing Loan: Most do not have housing loans.
-Contact: Primarily contacted via cellular.
-Month: Most contacts occurred in Q2.
-Default: Very low credit default rate.
-Personal Loan: Personal loans are uncommon.
-Day: Contacts evenly distributed throughout the month.
+- Campaign: Generally few campaign contacts.
+- Job: Predominantly retired, with many management and technician workers.
+- Marital: Mostly married customers.
+- Education: Mainly secondary education, followed by tertiary.
+- Housing Loan: Most do not have housing loans.
+- Contact: Primarily contacted via cellular.
+- Month: Most contacts occurred in Q2.
+- Default: Very low credit default rate.
+- Personal Loan: Personal loans are uncommon.
+- Day: Contacts evenly distributed throughout the month.
 
 ## Cluster 2
-Age: Around the average age with the widest age range.
-Balance: Mostly average balances with a few very high outliers.
-Duration: Around-average call durations with few long calls.
-Campaign: Generally few campaign contacts.
-Job: Mainly technicians, followed by blue-collar and management workers.
-Marital: Mostly married customers.
-Education: Predominantly secondary education, followed by tertiary.
-Housing Loan: Slightly more customers have housing loans.
-Contact: Primarily contacted via cellular.
-Month: Most contacts occurred in Q2.
-Default: Very low credit default rate.
-Personal Loan: Most do not have personal loans.
-Day: Contacts spread fairly evenly across the month, with a slight mid-month concentration.
+- Age: Around the average age with the widest age range.
+- Balance: Mostly average balances with a few very high outliers.
+- Duration: Around-average call durations with few long calls.
+- Campaign: Generally few campaign contacts.
+- Job: Mainly technicians, followed by blue-collar and management workers.
+- Marital: Mostly married customers.
+- Education: Predominantly secondary education, followed by tertiary.
+- Housing Loan: Slightly more customers have housing loans.
+- Contact: Primarily contacted via cellular.
+- Month: Most contacts occurred in Q2.
+- Default: Very low credit default rate.
+- Personal Loan: Most do not have personal loans.
+- Day: Contacts spread fairly evenly across the month, with a slight mid-month concentration.
 
 
 
